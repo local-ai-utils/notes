@@ -1,7 +1,7 @@
 from . import tools
 
-def register(config):
-    tools.set_config(config)
+def register(_, plugin_config):
+    tools.set_config(plugin_config)
     
     return {
         "name": "notes",

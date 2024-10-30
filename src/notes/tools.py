@@ -1,10 +1,5 @@
 from .main import insert_note, create_category, assign_category
 
-config = {}
-def set_config(conf):
-    global config
-    config = conf
-
 def create(note_text, categories):
     try:
         # Be very defensive here, because it's a response coming back from AI

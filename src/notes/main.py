@@ -25,7 +25,7 @@ def db():
             atexit.register(close)
     
     return cursor
-        
+
 # Register datetime adapter and converter
 def adapt_datetime(dt):
     return dt.isoformat()
