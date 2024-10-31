@@ -14,7 +14,7 @@ A simple bash script could tie all of these tools together into a seamless exper
 
 ```
 prompt=$(listen)
-assist prompt $prompt
+assist prompt "$prompt"
 ```
 
 ## Installation
