@@ -1,6 +1,8 @@
 # Local AI Utils - Notes
 A plugin for [local-ai-utils](https://github.com/local-ai-utils/core) to interact with a small SQLite notes database. In all reality this doesn't utilize any AI utilities, but it is a simple example tool chain that is greatly enhanced by other AI utilities.
 
+![Example AI-powered notes](/docs/note.gif)
+
 ## Example Use Case
 This plugin was made with an imagination of a local utility that can quickly take notes via a voice interface. You can use a few Local AI Utils Plugins to achieve this.
 
@@ -9,6 +11,11 @@ This plugin was made with an imagination of a local utility that can quickly tak
 - **notes** exposes the assist tool for creation, so there is no extra configuration needed.
 
 A simple bash script could tie all of these tools together into a seamless experience, or use an automation tool like [Hammerspoon](https://www.hammerspoon.org/) to bind a hotkey for even quicker note taking!
+
+```
+prompt=$(listen)
+assist prompt $prompt
+```
 
 ## Installation
 Currently installation is only supported via the GitHub remote.
