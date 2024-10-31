@@ -12,7 +12,6 @@ setup(
     },
     install_requires=[
         'typing_extensions',
-        'openai',
-        'local_ai_utils_core==0.1.0'
+        'openai'
     ],
 )
